@@ -1,0 +1,153 @@
+.error {
+    color: rgba(255, 0, 0, 0.705);
+}
+
+.success {
+    color: green;
+}
+
+#test {
+    color: maroon;
+}
+
+.orange {
+    background-color: orange;
+    text-align: center;
+    line-height: 2; /*sets height to twice the size of the font height*/
+    letter-spacing: 4px;
+    word-spacing: 20px;
+}
+
+.yellow {
+    background-color: yellow;
+}
+
+.font-styles {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-style: italic;
+    font-weight: bold;
+    text-decoration: underline;
+    font-size: 50px;
+}
+
+ul {
+    list-style-type: square;
+    margin: 10px;
+    padding: 0;
+}
+
+/*Understanding Box Model*/
+.box-model {
+    border: 5px solid yellow;
+    height: 50px;
+    width: 300px;
+    padding: 20px;
+    margin: 20px;
+    
+}
+
+/*Cascade & Specificity example*/
+h2 {
+    color: red;
+}
+
+h2 {
+    color: blue;
+}
+
+.sub-heading {
+    color: blue;
+}
+
+h3 { /*the class selector is more specific than the h3 selector*/
+    color: red; /*color: red !important; >> when I put the !important property it becomes the most specific!!!*/
+}
+
+#title { /*the id selector is more specific than the class selector*/
+    color: orange;
+}
+
+/*Inheritance: some CSS property set on parent elements are inherited by their child elements, and some aren't*/
+.inheritence {
+    color: orange;
+    font-family: Segoe UI;
+    font-size: 30px;
+}
+
+/*Styling a table*/
+th, 
+td {
+    border: 1px solid #ccc;
+    padding: 15px;
+}
+
+table {
+    border-collapse: collapse;
+    width: 60%;
+}
+
+td {
+    text-align: center;
+}
+
+/*learning about inline and block content*/
+.content-1 {
+    border: 1px solid #F00;
+    display: inline;
+}
+
+.content-2 {
+    border: 1px solid #00f;
+    display: block;
+}
+
+.content-3 {
+    border: 1px solid #0f0;
+    display: none;
+}
+
+/*learning about the position property*/
+.position-1 {
+    border: 1px solid #f00;
+    position: sticky;
+    top: 50px;
+    left: 50px;
+}
+
+.position-2 {
+    border: 1px solid #00f;
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+}
+
+.container {
+    position: relative;
+    width: 200px;
+    height: 500px;
+    border: 1px solid #000;
+}
+
+/*CSS Units: ABSOLUTE (ALWAYS THE SAME SIZE. Usefull for layouts where the page needs to be printed) / RELATIVE (RELATIVE TO SOMETHING ELSE, perhaps the size of the parent element's font, or size of the viewport)*/
+.em-container {
+    font-size: 20px;
+    height: 2em; /*1 em = font size, so this is 40px*/
+}
+
+.em {
+    font-size: 1.5em; /*= 30px*/
+}
+
+.rem {
+    font-size: 3rem; /*rem: relative to the font size of the root element, tipically that would be the html element. REM is a unit more commonly used to specify font sizes on a web page*/
+    height: min(50vh, 600px);
+    border: 1px solid #333;
+    width: 50vw;
+    margin-top: 10vh;
+}
+
+/*CSS MATH FUNCTIONS I've learned: calc(), max(), min()*/
+
+
+
+
